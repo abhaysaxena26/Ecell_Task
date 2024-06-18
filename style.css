@@ -1,0 +1,312 @@
+*{
+    margin : 0%;
+    padding : 0%;
+    box-sizing : border-box;
+}
+body,html{
+    height : 100%;
+    width : 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #ffefd1;
+    
+}
+#header{
+    height: 12%;
+    width: 100%;
+    position: fixed;
+    background-color: #F98866;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.text{
+    margin: 2%;
+    display: flex;
+    font-size:1.2vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 6px;
+    border-radius: 20px;
+    color: white;
+}
+.text:hover{
+    background-color: #ba5b3d;
+    cursor: pointer;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    font-size: 3vw;
+    font-weight: 600;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+#header img{
+    height: 10%;
+    width: 10%;
+}
+#header img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+button{
+    background-color: rgb(48, 193, 48);
+    border: 1px solid rgb(49, 178, 49);
+    border-radius: 20px;
+    padding: 1vw;
+    color: white;
+    font-size: 0.96vw;
+    font-weight: bold;
+    width: 7%;
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 2%;
+}
+button:hover{
+    background-color: rgb(6, 143, 6);
+    border: rgb(29, 227, 29);
+    transform: scale(1.2);
+    
+}
+#content{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#physics {
+    height: 29vw;
+    width: 30%;
+    background-color: #ffffff;
+    margin: 3%; 
+    margin-top: 10%; 
+    margin-bottom: 5%;  
+    border-radius: 15px 50px 30px;
+    font-size: 1.2vw;
+    overflow: hidden;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+#chemistry{
+    height: 29vw;
+    width: 30%;
+    background-color: #ffffff;
+    margin: 3%;
+    margin-top: 10%; 
+    margin-bottom: 5%;
+    border-radius: 15px 50px 30px;
+    font-size: 1.2vw;
+    overflow: hidden;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+#maths{
+    height: 29vw;
+    width: 30%;
+    background-color: #ffffff;
+    margin: 3%;  
+    margin-top: 10%; 
+    margin-bottom: 5%;
+    border-radius: 15px 50px 30px; 
+    font-size: 1.3vw;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden;
+    text-align: center;
+}
+#physics:hover{
+    
+    cursor: pointer;
+    transform: scale(1.02); 
+}
+#chemistry:hover{
+    
+    cursor: pointer;
+    transform: scale(1.02); 
+}
+#maths:hover{
+    
+    cursor: pointer;
+    transform: scale(1.02); 
+}
+.subj{
+    display: none;
+}
+.sub img{
+    height: 10vw;
+    width: 10vw;
+}
+#content .sub{
+    position: relative;
+    height: 40%;
+    width: 100%;
+    background-color: #F98866;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.category1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.category1 img{
+    height: 40%;
+    width: 40%;
+}
+.category1 img:hover{
+    transform: scale(1.04);
+}
+.category2 img:hover{
+    transform: scale(1.04);
+}
+.category2{
+    justify-content: center;
+} 
+.category2 img{
+    height: 17%;
+    width: 17%;
+}
+.books{
+    text-align: left;
+    align-items: center;
+    display: inline-block;
+}
+#footer{
+    height: 9.1vw;
+    width: 35vw;
+    background-color: white;
+    align-items: center;
+    margin-left: 33%; 
+    font-size: 0.8vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    border-radius: 26px;
+    /* background-color: #fff; */
+    
+}
+h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+#blank{
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+} 
+.icon{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+    display: none;
+}
+.sub{
+    font-size: 4vw;
+}
+#footer img{
+    height: 23px;
+    width: 23px;
+    cursor: pointer;
+    right: 33vw;
+    bottom: 1.0vw;
+    position: absolute;
+}
+
+@media (max-width: 800px) {
+    #header{
+        font-size: 1.6vh;
+    }
+    .text{
+        font-size: 2vh;
+    }
+    #logo{
+        font-size: 3vh;
+    }
+    button{
+        font-size: 2vw;
+        padding: 2vw;
+    }
+    .icon{
+        display: block;
+    }
+    .text{
+        display: none;
+    }
+    button{
+        display: none;
+    }
+    #content{
+        flex-direction: column;
+    }
+    .sub img{
+       display: none;
+    }
+    .category1 img{
+        display: none;
+    }
+    .category2 img{
+        display: none;
+    }
+    .category1{
+        display: block;
+        font-size: 2.5vw;
+    } 
+    .category2{
+        display: block;
+        font-size: 2.5vw;
+    }
+    #physics{
+        width: 50vw;
+        height: 230vw;
+        margin-top: 90px;
+        border-radius: 10px;
+        font-size: 2.4vw;
+
+    }
+    #chemistry{
+        width: 50vw;
+        height: 230vw;
+        margin-top: 3px;
+        border-radius: 10px;
+    }
+    #maths{
+        width: 50vw;
+        height: 230vw;
+        margin-top: 3px;
+        border-radius: 10px;
+    }
+    #footer{
+        width: 50vw;
+        height: 230vw; 
+        margin-left: 20vw;
+        margin-right: 10vw;
+        position: relative;
+    }
+    #footer h1{
+        font-size: 3vw;
+    }
+    #physics h1{
+        display: none;
+    }
+    #chemistry h1{
+        display: none;
+    }
+    #maths h1{
+        display: none;
+    }
+    .subj{
+        display: block;
+        color: white;
+    }
+    
+    
+}
